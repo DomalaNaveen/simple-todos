@@ -1,20 +1,15 @@
-.todo-container {
-  background-color: #ffffff;
-  background-size: cover;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.todo-item {
+  list-style-type: none;
 }
-.heading {
-  color: #ff8542;
-  font-size: 32px;
-  font-weight: bold;
+.title {
+  font-size: 18px;
+  font-weight: 400;
   font-family: 'Roboto';
 }
-.todo-card {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.delete-button {
+  border-radius: 10px;
+  border: 0;
+  background-color: transparent;
+  height: 30px;
+  width: 60px;
 }

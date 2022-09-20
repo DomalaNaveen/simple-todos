@@ -1,17 +1,17 @@
 const TodoItem = props => {
-  const {initialTodosList} = props
-  const {title} = initialTodosList
+  const {todoDetails, deleteTodo} = props
+  const {id, title} = todoDetails
+  const onDeleteTodo = () => {
+    deleteTodo(id)
+  }
 
   return (
-    <div className="todo-container">
-      <h1 className="heading">Simple Todos</h1>
-      <div className="todo-card">
-        <h1 className="todo-item">{title}</h1>
-        <button type="button" className="button">
-          Delete
-        </button>
-      </div>
-    </div>
+    <li className="todo-item">
+      <p className="title">{title}</p>
+      <button type="button" className="delete-button" onClick={onDeleteTodo}>
+        Delete
+      </button>
+    </li>
   )
 }
 

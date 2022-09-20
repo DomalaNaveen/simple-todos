@@ -1,1 +1,26 @@
-/* Write your CSS here */
+.bg-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #ffc2a0;
+}
+
+.todo-card {
+  background-color: #ffffff;
+  background-size: cover;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.heading {
+  color: #ff8542;
+  font-size: 32px;
+  font-weight: bold;
+  font-family: 'Roboto';
+}
+.todos-list {
+  display: flex;
+  flex-direction: column;
+}
